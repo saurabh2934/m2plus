@@ -1,0 +1,38 @@
+public class findsum {
+   public static int sum(int ad[]) {
+	   if (ad.length==0) {
+		   return 0;
+	   }
+	   int s=0;
+	   s+=ad[0];
+	   int sa[]=new int[ad.length-1];
+	   for(int i=1;i<ad.length;i++) {
+		   sa[i-1]=ad[i];
+	   }
+	   int s1=sum(sa);
+	   return s+s1;
+			  
+   }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int arr[]= {1,2,3,4};
+     System.out.println(sum(arr));
+	}
+
+}
+// and one more and esiest way
+public class findsum {
+         public static int sum(int arr[],int i){
+         if(i==arr.length){	
+		return 0;
+   	}
+	return arr[i]+sum(arr,i+1);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int arr[]= {1,2,3,4};
+     System.out.println(sum(arr,0));
+	}
+
+	
+
