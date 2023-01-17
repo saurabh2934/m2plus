@@ -1,0 +1,12 @@
+public class solution{
+     public static bolean findArray(int arr[],int element,int index){
+	if(index==arr.lenght){
+		return false;
+	}
+        if(arr[index]==element){
+		return true;
+		}
+          else{
+      	     return  findArray(arr,element,index+1);
+	}
+}
