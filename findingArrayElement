@@ -10,3 +10,7 @@ public class solution{
       	     return  findArray(arr,element,index+1);
 	}
 }
+ public staic void main(String[]args){
+    int arr[]={1,2,5,21,89};
+    System.out.println(findArray(arr,5,0);
+}
