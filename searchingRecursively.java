@@ -24,3 +24,16 @@ public class sollution{
                   {
                    System.out.println("array is not sorted");
                   }   
+// another way of checking aray is sorted or not
+    public static boolean issorted(int arr[],int startIndex){
+     if(startIndex==arr.length-1){
+		return true;
+		}
+
+     if(arr[startIndex]>arr[startIndex+1]){
+		return false;
+		}
+    boolean sorted=issorted(arr,startIndex+1);
+    return sorted;
+}
+
