@@ -1,0 +1,11 @@
+public class solution{
+     public static int indexOfelement(int arr[],int x,int si){
+        if(si==arr.length){
+		return -1;
+		}
+       if(arr[si]==x){
+	return si;
+	}
+       return indexOfelement(arr,x,i+1);
+  }
+}
