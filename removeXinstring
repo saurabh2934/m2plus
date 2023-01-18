@@ -1,0 +1,13 @@
+public class solution{
+     public static String removeX(String str){
+        if(str.length==0){
+		return str;
+		}
+	String s=removeX(str.substring(1));
+ 	if(str.charAt(0)=='x'){
+		return s;
+		}else{
+			return str.charAt(0)+s;
+		     }
+	}	
+}
