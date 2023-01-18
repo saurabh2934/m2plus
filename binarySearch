@@ -1,0 +1,18 @@
+//binary search recursively
+public class solution{
+        public static int binarySearch(int arr[],int si,int ei,int x){
+                if(si > ei){
+                     return -1;
+                        }
+        int midindex= (si+ei)/2;
+        if(arr[midindex]==x){
+                return midindex;
+                        }
+                if(arr[midindex]>x){
+                        return binarysearch(arr,midindex+1,ei,x);
+                        }else{
+                        return binarySearch(arr,si,midindex-1,x);
+                        }
+                }
+  }
+//hi brov

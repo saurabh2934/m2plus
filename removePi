@@ -13,4 +13,4 @@ public class solution{
 				return str.charAt(0)+s;
 			}
 		}
-	}
+}
