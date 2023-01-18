@@ -1,3 +1,4 @@
+//binary search recursively
 public class solution{
 	public static int binarySearch(int arr[],int si,int ei,int x){
 		if(si > ei){
